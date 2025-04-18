@@ -1,0 +1,159 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Li elements */
+li {list-style-type: none;}
+a {text-decoration: none;}
+
+/*Navbar Styles*/
+.w3-navbar { color: #fff; }
+.w3-navbar.w3-animate-top { color: #444; }
+.w3-navbar li a { transition: all 0.1s ease; padding: 8px;}
+/* Hover cambia de tamano sin modificar el tamano de la letra*/
+.w3-navbar li a:hover { font-weight: bolder; }
+.nav-hover {
+  background: #000000;
+  background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.41) 80%, rgba(0, 0, 0, 0) 100%);
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    opacity:1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image:url("./public/photos/fondoAlpha.png");
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("./public/photos/logo.png");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("./public/photos/fondoIndustrial.png");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+#googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+/* Turn off parallax scrolling for tablets and mobiles */
+@media only screen and (max-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+/* About Section */
+#about {
+  font-size: 1.4em;
+}
+
+/* Heart Icon */
+.heart-icon {
+  color: #f77;
+}
+
+
+/* Clearfix Hack */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/* Social Media Icons */
+.w3-half > a {
+  text-decoration: none;
+}
+
+i.fa {
+  padding-top: .2em;
+  padding-left: .5em;
+  padding-right: .5em;
+  transition: color 1s;
+}
+
+.fa-whatsapp:hover {
+  color: #4a4;
+}
+
+.fa-facebook:hover {
+  color: #04a;
+}
+
+.fa-instagram:hover {
+  color: rgba(247, 39, 184, 0.884);
+}
+.masonry-grid {
+  column-count: 3;
+  column-gap: 16px;
+}
+
+@media (max-width: 1024px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 16px;
+}
+
+.masonry-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+
+
+#profile { vertical-align: middle; }
+
+  

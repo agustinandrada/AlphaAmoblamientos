@@ -1,0 +1,218 @@
+<html>
+
+    <head>
+        <title>Alpha</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- icono navegador -->
+        <link rel="icon" type="image/png" href="/public/photos/logo.png">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="w3-top nav-hover">
+            <ul class="w3-navbar navbar-light" id="myNavbar">
+                <li><a href="#" class="w3-padding-large"
+                        style="font-weight: bold;">ALPHA
+                        AMOBLAMIENTOS</a></li>
+                <li class="w3-hide-small w3-right">
+                    <a href="#contact" class="w3-padding-large">Contacto</a>
+                </li>
+                <li class="w3-hide-small w3-right">
+                    <a href="#portfolio" class="w3-padding-large">Nuestros
+                        Productos</a>
+                </li>
+                <li class="w3-hide-small w3-right">
+                    <a href="#about" class="w3-padding-large">Nosotros</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-opacity w3-display-container">
+            <div class="w3-display-middle" style="white-space:nowrap;">
+
+            </div>
+        </div>
+
+        <!-- Container (About Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="about">
+            <h2 class="w3-center">AMOBLAMIENTO INDUSTRIAL</h2>
+            <p class="w3-center"><em>Fuerza y diseño en cada mueble</em></p>
+            <p>En ALPHA, creemos que el diseño industrial no es solo una
+                estética, sino una forma de vida. Creamos muebles que
+                combinan la fuerza del hierro con la nobleza de la madera,
+                logrando piezas únicas, resistentes y con carácter.
+
+                Cada uno de nuestros productos está pensado para durar, con
+                materiales seleccionados y terminaciones cuidadas al
+                detalle. Trabajamos con maderas de alta calidad y
+                estructuras metálicas sólidas, fusionando lo rústico con lo
+                moderno para que tu espacio hable por sí mismo.
+
+                Somos apasionados por lo que hacemos y nos mueve el deseo de
+                ofrecer diseño, funcionalidad y autenticidad en cada
+                creación.</p>
+        </div>
+
+        <!-- Second Parallax Image with Portfolio Text -->
+        <div class="bgimg-2 w3-display-container" id="portfolio">
+            <div class="w3-display-middle">
+
+            </div>
+        </div>
+
+        <!-- Container (Portfolio Section) -->
+        <div class="w3-content w3-container w3-padding-64">
+            <h2 class="w3-center">Nuestros Productos</h2>
+
+            <!-- Responsive Grid -->
+            <div id="products-container"></div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black"
+            onclick="this.style.display='none'">
+            <span
+                class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+            <div
+                class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" style="max-width:100%">
+            </div>
+        </div>
+
+        <!-- Third Parallax Image with Portfolio Text -->
+        <div class="bgimg-3 w3-display-container" id="contact">
+            <div class="w3-display-middle">
+                <h2
+                    class="w3-xxlarge w3-text-light-grey w3-wide">CONTACTANOS</h2>
+            </div>
+        </div>
+
+        <!-- Container (Contact Section) -->
+        <div class="w3-content w3-container w3-padding-64">
+            <h3 class="w3-center">Aquí estamos</h3>
+            <div class="w3-row w3-center">
+                <!-- Cambié a w3-row para manejar la estructura responsiva -->
+                <div class="w3-col m4 w3-container">
+                    <!-- Add Google Maps -->
+                    <div id="googleMap" class="w3-round-large">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4140.971912018765!2d-60.6818479243887!3d-31.514422974216643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDMwJzUxLjkiUyA2MMKwNDAnNDUuNCJX!5e1!3m2!1sen!2sar!4v1744941006011!5m2!1sen!2sar"
+                            width="600" height="450" style="border:0;"
+                            allowfullscreen loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <address class="w3-content w3-container w3-padding-64">
+                <div class="w3-col m8 w3-section">
+                    <div class="w3-large w3-margin-bottom">
+                        <i class="fa fa-map-marker w3-hover-text-black"
+                            style="width:30px"></i> Monte Vera, Santa Fe,
+                        Argentina<br>
+                        <i class="fa fa-phone w3-hover-text-black"
+                            style="width:30px"></i> Tel: +54 9 3425
+                        50-6898<br>
+                        <i class="fa fa-envelope w3-hover-text-black"
+                            style="width:30px"> </i> Email:
+                        alpha.atte@gmail.com<br>
+                    </div>
+                    <p>Envianos un mensaje:</p>
+                    <!-- Formulario de contacto -->
+                    <div class="w3-row-padding"
+                        style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input id="name"
+                                class="w3-input w3-border w3-hover-light-grey"
+                                type="text" placeholder="Nombre">
+                        </div>
+                        <div class="w3-half">
+                            <input id="email"
+                                class="w3-input w3-border w3-hover-light-grey"
+                                type="text" placeholder="Email">
+                        </div>
+                    </div>
+                    <input id="message"
+                        class="w3-input w3-border w3-hover-light-grey"
+                        type="text" placeholder="Qué quieres decirnos?">
+                    <button id="submitBtn"
+                        class="w3-btn w3-section w3-right">Enviar</button>
+
+                    <script type="text/javascript"
+                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+                </script>
+                    <script>
+                        // Inicializa EmailJS con tu userID (esto lo puedes obtener en la configuración de tu cuenta de EmailJS)
+                        emailjs.init("3fj4Dnqgx0BvK4zOa");
+
+                        document.getElementById('submitBtn').addEventListener('click', function() {
+                            // Obtener los valores de los campos
+                            const name = document.getElementById('name').value;
+                            const email = document.getElementById('email').value;
+                            const message = document.getElementById('message').value;
+
+                            // Validación simple de los campos
+                            if (name && email && message) {
+                                // Crea un objeto con los datos del formulario
+                                const templateParams = {
+                                    from_name: name,
+                                    from_email: email,
+                                    message: message
+                                };
+
+                                // Enviar el correo utilizando el template de EmailJS
+                                emailjs.send('service_7ibqlip', 'template_asha3oi', templateParams)
+                                    .then(function(response) {
+                                        console.log('Correo enviado:', response);
+                                        alert('¡Tu mensaje ha sido enviado correctamente!');
+                                        // Limpiar los campos después de enviar
+                                        document.getElementById('name').value = '';
+                                        document.getElementById('email').value = '';
+                                        document.getElementById('message').value = '';
+                                    }, function(error) {
+                                        console.log('Error al enviar el correo:', error);
+                                        alert('Hubo un problema al enviar tu mensaje. Inténtalo nuevamente.');
+                                    });
+                            } else {
+                                alert('Por favor, completa todos los campos.');
+                            }
+                        });
+                    </script>
+                </div>
+            </address>
+        </div>
+
+        <!-- Footer -->
+        <footer
+            class="w3-center w3-dark-grey w3-padding-48 w3-hover-black cf">
+            <div class="w3-half">
+                <a target="_blank"
+                    href="https://www.instagram.com/alpha_mv?igsh=bG5iNTVleGVkZjNn">
+                    <i class="fa fa-instagram fa-2x"></i>
+                </a>
+                <a target="_blank"
+                    href="https://www.facebook.com/marketplace/profile/100001296595540/?ref=permalink&tab=listings&mibextid=dXMIcH">
+                    <i class="fa fa-facebook fa-2x"></i>
+                </a>
+                <a target="_blank" href="wa.me/message/GYY4YN66DI2MB1">
+                    <i class="fa fa-whatsapp fa-2x"></i>
+                </a>
+            </div>
+            <p class="w3-half">Hecho por <a
+                    href="https://agustin-andrada.vercel.app"><img
+                        id="huemul-incon"
+                        src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/512px/1face.png"
+                        alt="huemul" height="20px" width="20px"> Huemul
+                    Solutions</a>
+            </footer>
+
+            <script src="/scripts.js"></script>
+        </body>
+    </html>
