@@ -5,6 +5,28 @@
         "src": "index.html",
         "use": "@vercel/static"
       }
-    ]
+    ],
+    "routes": [
+      {
+        "handle": "filesystem"
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/(.*)",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      }
+    ]        
   }
   
