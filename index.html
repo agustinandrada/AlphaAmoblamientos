@@ -54,6 +54,15 @@ a {text-decoration: none;}
     min-height: 100%;
 }
 
+/* que la imagen se vea bien en moviles */
+@media only screen and (max-width: 600px) {
+    .bgimg-1 {
+    background-image:url("https://github.com/agustinandrada/AlphaAmoblamientos/blob/main/assets/photos/fondoAlpha.png?raw=true");
+    min-height: 100%;
+    object-fit: cover;
+}
+}
+
 /* Second image (Portfolio) */
 .bgimg-2 {
     background-image: url("https://github.com/agustinandrada/AlphaAmoblamientos/blob/main/assets/photos/logo.png?raw=true");
@@ -79,7 +88,7 @@ a {text-decoration: none;}
 /* mapa chico para mobiles */
 @media only screen and (max-width: 600px) {
     #googleMap {
-    width: 100%;
+    width: 50%;
     height: 200px;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
