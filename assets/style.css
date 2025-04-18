@@ -37,19 +37,19 @@ a {text-decoration: none;}
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image:url("./assets/photos/fondoAlpha.png");
+    background-image:url("/assets/photos/fondoAlpha.png");
     min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("./assets/photos/logo.png");
+    background-image: url("/assets/photos/logo.png");
     min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("./assets/photos/fondoIndustrial.png");
+    background-image: url("/assets/photos/fondoIndustrial.png");
     min-height: 400px;
 }
 
