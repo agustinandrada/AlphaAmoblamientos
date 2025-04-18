@@ -6,11 +6,6 @@
         "use": "@vercel/static"
       }
     ],
-    "routes": [
-      {
-        "handle": "filesystem"
-      }
-    ],
     "rewrites": [
       {
         "source": "/(.*)",
