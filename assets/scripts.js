@@ -1,4 +1,3 @@
-
 // Smooth Scroll on anchor links
 (function () {
 
