@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const div = document.createElement('div');
             div.classList.add('masonry-item');
             div.innerHTML = `
-                <img src="/public/photos/${folderName}/${i}.jpg"
+                <img src="/assets/photos/${folderName}/${i}.jpg"
                      onclick="onClick(this)"
                      class="w3-hover-opacity">
             `;
